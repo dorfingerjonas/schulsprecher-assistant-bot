@@ -1,0 +1,42 @@
+{
+  "name": "your-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node dist/index.js",
+    "start:dev": "cross-env NODE_ENV=development nodemon --watch src src/index.ts",
+    "build": "tsc",
+    "lint": "eslint 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schollsebastian/Discord-Bot-Template.git"
+  },
+  "keywords": [
+    "discord",
+    "discord.js",
+    "discord-bot"
+  ],
+  "author": "Your Name <email@example.com> (http://example.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schollsebastian/Discord-Bot-Template/issues"
+  },
+  "homepage": "https://github.com/schollsebastian/Discord-Bot-Template#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "@types/ws": "^7.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.21.0",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.2"
+  }
+}
