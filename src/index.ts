@@ -51,6 +51,8 @@ client.on('messageCreate', message => {
             author: original?.author.id,
             content: original?.content
           }
+        }).then(() => {
+          thread.send('<@!305083169831649280>');
         });
       });
     } else {
