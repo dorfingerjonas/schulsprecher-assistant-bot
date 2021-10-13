@@ -1,7 +1,7 @@
 {
-  "name": "your-bot",
+  "name": "schulsprecher-assistant-bot",
   "version": "1.0.0",
-  "description": "A Discord bot.",
+  "description": "",
   "main": "src/index.ts",
   "scripts": {
     "start": "node dist/index.js",
@@ -11,22 +11,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/schollsebastian/Discord-Bot-Template.git"
+    "url": "git+https://github.com/dorfingerjonas/schulsprecher-assistant-bot.git"
   },
   "keywords": [
     "discord",
     "discord.js",
     "discord-bot"
   ],
-  "author": "Your Name <email@example.com> (http://example.com)",
+  "author": "Jonas Dorfinger",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/schollsebastian/Discord-Bot-Template/issues"
+    "url": "https://github.com/dorfingerjonas/schulsprecher-assistant-bot/issues"
   },
-  "homepage": "https://github.com/schollsebastian/Discord-Bot-Template#readme",
+  "homepage": "https://github.com/dorfingerjonas/schulsprecher-assistant-bot#readme",
   "dependencies": {
-    "discord.js": "^12.5.1",
-    "dotenv": "^8.2.0"
+    "discord.js": "13.1.0",
+    "dotenv": "^8.2.0",
+    "firebase-admin": "^9.12.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.31",

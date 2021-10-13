@@ -300,3 +300,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/webstorm,windows,linux,macos,node,visualstudiocode
+/src/schuelervertretung-service-account.json
