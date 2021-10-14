@@ -44,11 +44,11 @@ client.on('messageCreate', message => {
         const ref = db.ref('tasks');
 
         ref.push({
-          createdBy: thread.ownerId,
+          startedBy: thread.ownerId,
           threadName: thread.name,
-          editor: message.author.id,
+          editor: message.author.tag,
           originalMsg: {
-            author: original?.author.id,
+            author: original?.author.tag,
             content: original?.content
           }
         }).then(() => {
