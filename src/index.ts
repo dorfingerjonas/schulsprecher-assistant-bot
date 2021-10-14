@@ -44,7 +44,7 @@ client.on('messageCreate', message => {
         const ref = db.ref('tasks');
 
         ref.push({
-          startedBy: thread.ownerId,
+          startedBy: thread.parent?.members.find(member => member.user.id === thread.ownerId)?.user.tag,
           threadName: thread.name,
           editor: message.author.tag,
           originalMsg: {
